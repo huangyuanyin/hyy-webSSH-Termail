@@ -67,5 +67,6 @@ if __name__ == '__main__':
 
     # 启动服务器
     http_server = tornado.httpserver.HTTPServer(app)
-    http_server.listen(3003)
+    # 服务器端口号
+    http_server.listen(3003) 
     tornado.ioloop.IOLoop.current().start()
